@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/file1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="73dp"
+        android:ems="10" 
+        android:hint="File1">
+
+        <requestFocus />
+    </TextView>
+
+    <Button
+        android:id="@+id/btnfile1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/file1"
+        android:layout_below="@+id/file1"
+        android:layout_marginRight="66dp"
+        android:layout_marginTop="28dp"
+        android:text="Select file1" />
+
+    <Button
+        android:id="@+id/btnfile2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnfile1"
+        android:layout_below="@+id/file2"
+        android:layout_marginTop="25dp"
+        android:text="Select file2" />
+
+    <Button
+        android:id="@+id/btnCompare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnfile2"
+        android:layout_marginBottom="23dp"
+        android:text="Compare" />
+
+    <TextView
+        android:id="@+id/file2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/file1"
+        android:layout_below="@+id/btnfile1"
+        android:layout_marginTop="41dp"
+        android:ems="10" 
+        android:hint="File2"
+        />
+
+    
+</RelativeLayout>
